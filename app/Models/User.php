@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -19,6 +19,7 @@ class User extends Authenticatable
         'name', 'email', 'password',
     ];
 
+    protected $table = 'users';
     /**
      * The attributes that should be hidden for arrays.
      *
